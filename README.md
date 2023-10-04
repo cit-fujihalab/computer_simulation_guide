@@ -5,29 +5,31 @@
 ## 環境構築について
 
 ### 必要モジュール
-- matplotlib
+- matplotlib(v-3.4.1)
 - numpy
 - networkx
 - scipy
+
 上記モジュールはGithubの同一リポジトリ内にあるrequirements.txtを利用すると一括でインストール可能.
+また**apt-get install**でtkinterのインストールも行うこと.
 ```sh
-$ pip3 install -r requirements.txt
-$ apt-get install python3-tk
+$ sudo pip3 install -r requirements.txt
+$ sudo apt-get install python3-tk
 ```
 
 また2023年3月時点**matplotlib**の最新バージョンに実験ソースコードが実行できない.
 そのため**matplotlib**のV-3.4.1をインストールすること.(管理者権限で実行することが望ましい.)<br>
-すでに**matplotlib**がインストールされている場合は, 競合する懸念から**matplotlib**をアンインストールしてからインストールするのが望ましい.
+　すでに**matplotlib**がインストールされている場合は, 競合する懸念から**matplotlib**をアンインストールしてからインストールするのが望ましい.
 ```sh
-$ pip3 uninstall matplotlib
-$ pip3 install matplotlib==3.4.1
+$ sudo pip3 uninstall matplotlib
+$ sudo pip3 install matplotlib==3.4.1
 ```
 
 ### 追加アプリケーション
 アプリケーションをインストールし, コーディング環境の選択肢を増やしている.
 - VScode
 
-今後もTAの判断で, 追加でソフトウェアの更新しても本README.mdにも追記すること
+今後もTAの判断で, 追加でソフトウェアの更新をした際は, 本README.mdにも追記すること.
 
 ## トラブルシューティング
 
