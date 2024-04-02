@@ -3,17 +3,20 @@
 工学部情報通信システム工学科3年次に受講する情報工学実験1の情報共有の為にこの資料を残す. **(本資料は2023年4月の情報である.)**
 
 ## 環境構築について
+2023年度時点での動作確認とれているものを記載している.
+2023年以降動作ができなくなるモジュールバージョンが発生したら以下に追記すること
 
 ### 必要モジュール
-- matplotlib(v-3.4.1)
-- numpy
-- networkx
-- scipy
+- matplotlib (v-3.4.1)
+- numpy (バージョン指定不要)
+- networkx　(バージョン指定不要)
+- scipy (バージョン指定不要)
 
-上記モジュールはGithubの同一リポジトリ内にあるrequirements.txtを利用すると一括でインストール可能.
+
+上記モジュールはGithubの同一リポジトリ内にあるrequirements.pyを利用すると一括でインストール可能.
 また**apt-get install**でtkinterのインストールも行うこと.
 ```sh
-$ sudo pip3 install -r requirements.txt
+$ sudo pip3 install -r requirements.py
 $ sudo apt-get install python3-tk
 ```
 
